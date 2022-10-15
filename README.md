@@ -25,31 +25,24 @@
            Buscando o usuario pelo ID e permitindo DELETAR o mesmo. (caso exista uma Orders para este usuario, não será possivel deletar).    
       
         
-   * /orders <br>
+  * /orders <br>
   
           * `GET` <br>
            Usando GET, retornará as orders populados no banco de dados.
            * `GET:ID` <br>
            Retornando dados da busca da order pelo ID do mesmo. Ex: `localhost:8080/orders/1`<br>
            
-   * /categories <br>
+  * /categories <br>
   
           * `GET` <br>
            Usando GET, retornará as categorias populados no banco de dados.
            * `GET:ID` <br>
            Retornando dados da busca da categoria pelo ID do mesmo. Ex: `localhost:8080/categoria/1`<br>
     
-     * /products <br>
+  * /products <br>
   
           * `GET` <br>
            Usando GET, retornará os produtos populados no banco de dados.
            * `GET:ID` <br>
            Retornando dados da busca do produto pelo ID do mesmo. Ex: `localhost:8080/categoria/1`<br>
-   
-           
-  
-     
-   
-      
-  
-  
+ 
