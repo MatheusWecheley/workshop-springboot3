@@ -38,14 +38,17 @@
            Usando GET, retornará as categorias populados no banco de dados.
            * `GET:ID` <br>
            Retornando dados da busca da categoria pelo ID do mesmo. Ex: `localhost:8080/categoria/1`<br>
-           
-    * /products <br>
+    
+     * /products <br>
   
           * `GET` <br>
-           Usando GET, retornará os products populados no banco de dados.
+           Usando GET, retornará os produtos populados no banco de dados.
            * `GET:ID` <br>
-           Retornando dados da busca do product pelo ID do mesmo. Ex: `localhost:8080/products/1`<br>
+           Retornando dados da busca do produto pelo ID do mesmo. Ex: `localhost:8080/categoria/1`<br>
    
+           
+  
+     
    
       
   
