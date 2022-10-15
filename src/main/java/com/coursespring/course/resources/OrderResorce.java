@@ -1,6 +1,7 @@
 package com.coursespring.course.resources;
 
-import com.coursespring.course.entities.User;
+import com.coursespring.course.entities.Order;
+import com.coursespring.course.services.OrderService;
 import com.coursespring.course.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,20 +13,21 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value="/users")
-public class UserResorce {
+@RequestMapping(value="/orders")
+public class OrderResorce {
 
     @Autowired
-    private UserService service;
+    private OrderService service;
+
     @GetMapping
-    public ResponseEntity<List<User>> findAll() {
-        List<User> list = service.findAll();
+    public ResponseEntity<List<Order>> findAll() {
+        List<Order> list = service.findAll();
         return ResponseEntity.ok().body(list);
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<User> findById(@PathVariable Long id) {
-        User user = service.findById(id);
-        return ResponseEntity.ok().body(user);
+    public ResponseEntity<Order> findById(@PathVariable Long id) {
+        Order order = service.findById(id);
+        return ResponseEntity.ok().body(order);
     }
 }
